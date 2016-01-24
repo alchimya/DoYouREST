@@ -1,5 +1,5 @@
 # DoYouREST
-A ready to use project to develop your REST API unde NodeJS.
+A ready to use project to develop your REST API under NodeJS.
 
 # What is this?
 You can see this project as a template to develop RESTful services using the NodeJS ecosystem.
