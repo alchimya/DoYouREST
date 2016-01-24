@@ -45,16 +45,6 @@ function JWTSecurity(){
                         });
                         break;
                 }
-                /*
-                console.log(req.err);
-                if (req.err) {
-                    return res.status(401).send({ success: false, message: 'Failed to authenticate token.' });
-                } else {
-                    // if everything is good, save to request for use in other routes
-                    //req.decoded = _decoded;
-                    next();
-                }
-                */
 
             } else {
 
