@@ -16,7 +16,7 @@
     "host":"localhost",
     "port":3306,
     "connectionPool":100,
-    "isEnabled":true
+    "isEnabled":false
   },
   "authentication":{
     "isEnabled":true,
