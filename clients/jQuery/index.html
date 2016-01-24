@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>REST Client Test</title>
+
+        <!-- Bootstrap -->
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- App -->
+        <link href="css/app/app.css" rel="stylesheet">
+
+    </head>
+    <body >
+        <!--
+        <nav class="navbar navbar-default" role="navigation"  >
+            <div class="container-fluid">
+            </div>
+        </nav>
+        -->
+
+        <div>
+            <!-- Current token:{{token}}-->
+            <br/>
+            <textarea  cols="100" rows="15" id="response"  ></textarea>
+            <br/>
+            <input type="submit" id="token" value="Request a JSON Web Token" />
+            <br/>
+            <input type="submit" id="apiTest" value="API Basic Test" />
+        </div>
+
+
+
+        <!-- jQuery -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- app -->
+        <script src="js/HttpData.js"></script>
+        <script src="js/HttpRequest.js"></script>
+        <!-- Controllers -->
+        <script src="js/controllers/MainController.js"></script>
+
+    </body>
+</html>
+

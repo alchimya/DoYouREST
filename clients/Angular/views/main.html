@@ -1,0 +1,14 @@
+<h3>Client Test</h3>
+<div>
+
+    <div ng-controller="MainController">
+       <!-- Current token:{{token}}-->
+        <br/>
+        <textarea  cols="100" rows="15" ng-model="httpDataString" ></textarea>
+        <br/>
+        <button ng-click="requestToken()">Request a JSON Web Token</button>
+        <br/>
+        <button ng-click="apiTestBasic()">API Basic Test</button>
+    </div>
+
+</div>

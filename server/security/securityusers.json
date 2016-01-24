@@ -1,0 +1,7 @@
+{
+  "users": [
+    {"uid":"my_uid_1","pwd":"my_pwd_1"},
+    {"uid":"my_uid_2","pwd":"my_pwd_2"},
+    {"uid":"my_uid_3","pwd":"my_pwd_3"}
+  ]
+}

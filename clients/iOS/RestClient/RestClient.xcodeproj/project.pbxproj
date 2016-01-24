@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DACE903A1C5405550042EE43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE90391C5405550042EE43 /* AppDelegate.swift */; };
+		DACE903F1C5405550042EE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACE903D1C5405550042EE43 /* Main.storyboard */; };
+		DACE90411C5405550042EE43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DACE90401C5405550042EE43 /* Assets.xcassets */; };
+		DACE90441C5405550042EE43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACE90421C5405550042EE43 /* LaunchScreen.storyboard */; };
+		DACE904F1C5405550042EE43 /* RestClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE904E1C5405550042EE43 /* RestClientTests.swift */; };
+		DACE905A1C5405550042EE43 /* RestClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE90591C5405550042EE43 /* RestClientUITests.swift */; };
+		DACE90781C5405A40042EE43 /* ApiBasicTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE90691C5405A40042EE43 /* ApiBasicTest.swift */; };
+		DACE90791C5405A40042EE43 /* ApiSequelizeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE906A1C5405A40042EE43 /* ApiSequelizeTest.swift */; };
+		DACE907A1C5405A40042EE43 /* ApiSocketIOTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE906B1C5405A40042EE43 /* ApiSocketIOTest.swift */; };
+		DACE907B1C5405A40042EE43 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE906D1C5405A40042EE43 /* Server.swift */; };
+		DACE907C1C5405A40042EE43 /* HTTPRequestTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE906F1C5405A40042EE43 /* HTTPRequestTags.swift */; };
+		DACE907D1C5405A40042EE43 /*  L3SDKJWAProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE90711C5405A40042EE43 /*  L3SDKJWAProtocols.swift */; };
+		DACE907E1C5405A40042EE43 /*  L3SDKJWARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE90721C5405A40042EE43 /*  L3SDKJWARequest.swift */; };
+		DACE907F1C5405A40042EE43 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE90741C5405A40042EE43 /* JWT.swift */; };
+		DACE90801C5405A40042EE43 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE90761C5405A40042EE43 /* MapViewController.swift */; };
+		DACE90811C5405A40042EE43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE90771C5405A40042EE43 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DACE904B1C5405550042EE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACE902E1C5405550042EE43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DACE90351C5405550042EE43;
+			remoteInfo = RestClient;
+		};
+		DACE90561C5405550042EE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACE902E1C5405550042EE43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DACE90351C5405550042EE43;
+			remoteInfo = RestClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DACE90361C5405550042EE43 /* RestClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACE90391C5405550042EE43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DACE903E1C5405550042EE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DACE90401C5405550042EE43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DACE90431C5405550042EE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DACE90451C5405550042EE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACE904A1C5405550042EE43 /* RestClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACE904E1C5405550042EE43 /* RestClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClientTests.swift; sourceTree = "<group>"; };
+		DACE90501C5405550042EE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACE90551C5405550042EE43 /* RestClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACE90591C5405550042EE43 /* RestClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClientUITests.swift; sourceTree = "<group>"; };
+		DACE905B1C5405550042EE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DACE90691C5405A40042EE43 /* ApiBasicTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiBasicTest.swift; sourceTree = "<group>"; };
+		DACE906A1C5405A40042EE43 /* ApiSequelizeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiSequelizeTest.swift; sourceTree = "<group>"; };
+		DACE906B1C5405A40042EE43 /* ApiSocketIOTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiSocketIOTest.swift; sourceTree = "<group>"; };
+		DACE906D1C5405A40042EE43 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		DACE906F1C5405A40042EE43 /* HTTPRequestTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestTags.swift; sourceTree = "<group>"; };
+		DACE90711C5405A40042EE43 /*  L3SDKJWAProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " L3SDKJWAProtocols.swift"; sourceTree = "<group>"; };
+		DACE90721C5405A40042EE43 /*  L3SDKJWARequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " L3SDKJWARequest.swift"; sourceTree = "<group>"; };
+		DACE90741C5405A40042EE43 /* JWT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWT.swift; sourceTree = "<group>"; };
+		DACE90761C5405A40042EE43 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DACE90771C5405A40042EE43 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DACE90331C5405550042EE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACE90471C5405550042EE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACE90521C5405550042EE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DACE902D1C5405550042EE43 = {
+			isa = PBXGroup;
+			children = (
+				DACE90381C5405550042EE43 /* RestClient */,
+				DACE904D1C5405550042EE43 /* RestClientTests */,
+				DACE90581C5405550042EE43 /* RestClientUITests */,
+				DACE90371C5405550042EE43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DACE90371C5405550042EE43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DACE90361C5405550042EE43 /* RestClient.app */,
+				DACE904A1C5405550042EE43 /* RestClientTests.xctest */,
+				DACE90551C5405550042EE43 /* RestClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DACE90381C5405550042EE43 /* RestClient */ = {
+			isa = PBXGroup;
+			children = (
+				DACE90671C5405A40042EE43 /* SDK */,
+				DACE90751C5405A40042EE43 /* ViewControllers */,
+				DACE90391C5405550042EE43 /* AppDelegate.swift */,
+				DACE903D1C5405550042EE43 /* Main.storyboard */,
+				DACE90401C5405550042EE43 /* Assets.xcassets */,
+				DACE90421C5405550042EE43 /* LaunchScreen.storyboard */,
+				DACE90451C5405550042EE43 /* Info.plist */,
+			);
+			path = RestClient;
+			sourceTree = "<group>";
+		};
+		DACE904D1C5405550042EE43 /* RestClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				DACE904E1C5405550042EE43 /* RestClientTests.swift */,
+				DACE90501C5405550042EE43 /* Info.plist */,
+			);
+			path = RestClientTests;
+			sourceTree = "<group>";
+		};
+		DACE90581C5405550042EE43 /* RestClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DACE90591C5405550042EE43 /* RestClientUITests.swift */,
+				DACE905B1C5405550042EE43 /* Info.plist */,
+			);
+			path = RestClientUITests;
+			sourceTree = "<group>";
+		};
+		DACE90671C5405A40042EE43 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DACE90681C5405A40042EE43 /* API */,
+				DACE906C1C5405A40042EE43 /* Config */,
+				DACE906E1C5405A40042EE43 /* Consts */,
+				DACE90701C5405A40042EE43 /* Net */,
+				DACE90731C5405A40042EE43 /* Security */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		DACE90681C5405A40042EE43 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DACE90691C5405A40042EE43 /* ApiBasicTest.swift */,
+				DACE906A1C5405A40042EE43 /* ApiSequelizeTest.swift */,
+				DACE906B1C5405A40042EE43 /* ApiSocketIOTest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DACE906C1C5405A40042EE43 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DACE906D1C5405A40042EE43 /* Server.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DACE906E1C5405A40042EE43 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				DACE906F1C5405A40042EE43 /* HTTPRequestTags.swift */,
+			);
+			path = Consts;
+			sourceTree = "<group>";
+		};
+		DACE90701C5405A40042EE43 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				DACE90711C5405A40042EE43 /*  L3SDKJWAProtocols.swift */,
+				DACE90721C5405A40042EE43 /*  L3SDKJWARequest.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		DACE90731C5405A40042EE43 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				DACE90741C5405A40042EE43 /* JWT.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		DACE90751C5405A40042EE43 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DACE90761C5405A40042EE43 /* MapViewController.swift */,
+				DACE90771C5405A40042EE43 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DACE90351C5405550042EE43 /* RestClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACE905E1C5405550042EE43 /* Build configuration list for PBXNativeTarget "RestClient" */;
+			buildPhases = (
+				DACE90321C5405550042EE43 /* Sources */,
+				DACE90331C5405550042EE43 /* Frameworks */,
+				DACE90341C5405550042EE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestClient;
+			productName = RestClient;
+			productReference = DACE90361C5405550042EE43 /* RestClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DACE90491C5405550042EE43 /* RestClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACE90611C5405550042EE43 /* Build configuration list for PBXNativeTarget "RestClientTests" */;
+			buildPhases = (
+				DACE90461C5405550042EE43 /* Sources */,
+				DACE90471C5405550042EE43 /* Frameworks */,
+				DACE90481C5405550042EE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DACE904C1C5405550042EE43 /* PBXTargetDependency */,
+			);
+			name = RestClientTests;
+			productName = RestClientTests;
+			productReference = DACE904A1C5405550042EE43 /* RestClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DACE90541C5405550042EE43 /* RestClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACE90641C5405550042EE43 /* Build configuration list for PBXNativeTarget "RestClientUITests" */;
+			buildPhases = (
+				DACE90511C5405550042EE43 /* Sources */,
+				DACE90521C5405550042EE43 /* Frameworks */,
+				DACE90531C5405550042EE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DACE90571C5405550042EE43 /* PBXTargetDependency */,
+			);
+			name = RestClientUITests;
+			productName = RestClientUITests;
+			productReference = DACE90551C5405550042EE43 /* RestClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DACE902E1C5405550042EE43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = DomenicoVacchiano;
+				TargetAttributes = {
+					DACE90351C5405550042EE43 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DACE90491C5405550042EE43 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DACE90351C5405550042EE43;
+					};
+					DACE90541C5405550042EE43 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = DACE90351C5405550042EE43;
+					};
+				};
+			};
+			buildConfigurationList = DACE90311C5405550042EE43 /* Build configuration list for PBXProject "RestClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DACE902D1C5405550042EE43;
+			productRefGroup = DACE90371C5405550042EE43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DACE90351C5405550042EE43 /* RestClient */,
+				DACE90491C5405550042EE43 /* RestClientTests */,
+				DACE90541C5405550042EE43 /* RestClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DACE90341C5405550042EE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACE90441C5405550042EE43 /* LaunchScreen.storyboard in Resources */,
+				DACE90411C5405550042EE43 /* Assets.xcassets in Resources */,
+				DACE903F1C5405550042EE43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACE90481C5405550042EE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACE90531C5405550042EE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DACE90321C5405550042EE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACE90801C5405A40042EE43 /* MapViewController.swift in Sources */,
+				DACE907E1C5405A40042EE43 /*  L3SDKJWARequest.swift in Sources */,
+				DACE907A1C5405A40042EE43 /* ApiSocketIOTest.swift in Sources */,
+				DACE903A1C5405550042EE43 /* AppDelegate.swift in Sources */,
+				DACE907D1C5405A40042EE43 /*  L3SDKJWAProtocols.swift in Sources */,
+				DACE90811C5405A40042EE43 /* ViewController.swift in Sources */,
+				DACE907F1C5405A40042EE43 /* JWT.swift in Sources */,
+				DACE90791C5405A40042EE43 /* ApiSequelizeTest.swift in Sources */,
+				DACE907C1C5405A40042EE43 /* HTTPRequestTags.swift in Sources */,
+				DACE907B1C5405A40042EE43 /* Server.swift in Sources */,
+				DACE90781C5405A40042EE43 /* ApiBasicTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACE90461C5405550042EE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACE904F1C5405550042EE43 /* RestClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACE90511C5405550042EE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACE905A1C5405550042EE43 /* RestClientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DACE904C1C5405550042EE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DACE90351C5405550042EE43 /* RestClient */;
+			targetProxy = DACE904B1C5405550042EE43 /* PBXContainerItemProxy */;
+		};
+		DACE90571C5405550042EE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DACE90351C5405550042EE43 /* RestClient */;
+			targetProxy = DACE90561C5405550042EE43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DACE903D1C5405550042EE43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DACE903E1C5405550042EE43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DACE90421C5405550042EE43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DACE90431C5405550042EE43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DACE905C1C5405550042EE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DACE905D1C5405550042EE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DACE905F1C5405550042EE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RestClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenicovacchiano.RestClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DACE90601C5405550042EE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RestClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenicovacchiano.RestClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DACE90621C5405550042EE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RestClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenicovacchiano.RestClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestClient.app/RestClient";
+			};
+			name = Debug;
+		};
+		DACE90631C5405550042EE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RestClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenicovacchiano.RestClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RestClient.app/RestClient";
+			};
+			name = Release;
+		};
+		DACE90651C5405550042EE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RestClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenicovacchiano.RestClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RestClient;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DACE90661C5405550042EE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RestClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenicovacchiano.RestClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RestClient;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DACE90311C5405550042EE43 /* Build configuration list for PBXProject "RestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACE905C1C5405550042EE43 /* Debug */,
+				DACE905D1C5405550042EE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACE905E1C5405550042EE43 /* Build configuration list for PBXNativeTarget "RestClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACE905F1C5405550042EE43 /* Debug */,
+				DACE90601C5405550042EE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DACE90611C5405550042EE43 /* Build configuration list for PBXNativeTarget "RestClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACE90621C5405550042EE43 /* Debug */,
+				DACE90631C5405550042EE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DACE90641C5405550042EE43 /* Build configuration list for PBXNativeTarget "RestClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACE90651C5405550042EE43 /* Debug */,
+				DACE90661C5405550042EE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DACE902E1C5405550042EE43 /* Project object */;
+}

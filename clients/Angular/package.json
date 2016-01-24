@@ -1,0 +1,35 @@
+{
+  "name": "RestClient",
+  "version": "1.0.0",
+  "description": "RestClient",
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "SocketIO",
+    "AngularJS"
+  ],
+  "author": {
+    "name": "Domenico Vacchiano",
+    "email": "info@domenicovacchiano.com",
+    "url": "http://www.domenicovacchiano.com"
+  },
+  "homepage": "http://www.domenicovacchiano.com/",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "angular-cookies": "^1.4.8",
+    "angular-animate": "^1.4.8",
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6"
+  }
+}
+

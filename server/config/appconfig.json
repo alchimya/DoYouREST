@@ -1,0 +1,35 @@
+{
+  "server":{
+    "port":8080,
+    "apiRoute":"/api",
+    "isCluster":false,
+    "headers":[
+      {"name":"Access-Control-Allow-Origin","value":"*"},
+      {"name":"Access-Control-Allow-Headers","value":"Origin, X-Requested-With, Content-Type, Accept"},
+      {"name":"Access-Control-Allow-Methods","value":"GET,PUT,POST,DELETE,OPTIONS"}
+    ]
+  },
+  "database":{
+    "name":"doyourest",
+    "user":"your_mysql_user",
+    "password":"your_mysql_password",
+    "host":"localhost",
+    "port":3306,
+    "connectionPool":100,
+    "isEnabled":true
+  },
+  "authentication":{
+    "isEnabled":true,
+    "type":1,
+    "expirationToken":1440,
+    "jwt":{
+      "cryptography":1,
+      "symmetricKey":"my_super_top_secret_key!!!",
+      "asymmetricPivateKey":"./security/private.key",
+      "asymmetricPublicKey":"./security/public.pem"
+    }
+  },
+  "socketio":{
+    "isEnabled":true
+  }
+}

@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\RestClient\RestClient\bin\Debug\RestClient.exe.config
+C:\Users\Administrator\Desktop\RestClient\RestClient\bin\Debug\RestClient.exe
+C:\Users\Administrator\Desktop\RestClient\RestClient\bin\Debug\RestClient.pdb
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\RestClient_MarkupCompile.cache
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\RestClient.g.resources
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\RestClient.Properties.Resources.resources
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\RestClient.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\RestClient.exe
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\RestClient.pdb
+C:\Users\Administrator\Desktop\RestClient\RestClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\RestClient\RestClient\obj\Debug\RestClient.csprojResolveAssemblyReference.cache

@@ -1,0 +1,31 @@
+{
+  "name": "RestClient",
+  "version": "1.0.0",
+  "description": "RestClient",
+  "keywords": [
+    "NodeJS",
+    "ExpressJS",
+    "SocketIO",
+    "iQuery"
+  ],
+  "author": {
+    "name": "Domenico Vacchiano",
+    "email": "info@domenicovacchiano.com",
+    "url": "http://www.domenicovacchiano.com"
+  },
+  "homepage": "http://www.domenicovacchiano.com/",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6"
+  }
+}
+
