@@ -9,7 +9,7 @@ In a very easy way (through a JSON config file) you can configure:
  - <b>Server variables</b> such as: listening port, API routing path, clustering behaviour, headers.
  - <b>Database variables</b> such as: login and host params, connenciton pool, enable/disable.
  - <b>Authentication mode</b>: you can choose to enable/disable the authentication and you can setup it through JSON Web Token or basic-auth.
- - <b>Socket.io</b>: you can enable/disable this feature, that allow to implement a real-time behaviour
+ - <b>Socket.io</b>: you can enable/disable this feature, that allows to implement a real-time behaviour
 
 Basically, this project has been developed around the following Node modules:
 - ExpressJS: used to develop some useful middleware and to implement the REST behaviour (http://expressjs.com/)
