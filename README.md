@@ -51,7 +51,7 @@ All the configuration settings listed below are included within the file <b>/Con
 ```
 where:
 - <b>port</b>: is the port where the server is listening
-- <b>apiRoute</b>: is the base routing path to access to the api (eg http://localhost:8080/api/customers)
+- <b>apiRoute</b>: is the base routing path to access to the api (eg http://localhost:8080<b>/api</b>/customers)
 - <b>isCluster</b>: not yet implemented, however by setting this value to true the Node app will be clustered (here a good tutorial about the node clustering http://stackabuse.com/setting-up-a-node-js-cluster/)
 - <b>headers</b>:put here all the response headers that you want to use, for example to enable the cross-origin resource sharing.
 
@@ -71,7 +71,7 @@ I f you will setup the doyourest database into your MySql environment, you will 
     "port":3306,
     "connectionPool":100,
     "isEnabled":true
-  },
+  }
 ```
 where:
 - <b>name</b>: the name of your database
