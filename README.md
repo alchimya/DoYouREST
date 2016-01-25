@@ -16,6 +16,7 @@ Basically, this project has been developed around the following Node modules:
 - SequelizeJS: is a promise-based ORM (http://docs.sequelizejs.com/en/latest/)
 - Socket.io: used to implement a realtime behaviour (http://socket.io).
 <br/>
+<br/>
  This package includes also different test client solutions for the following environments:
  
 - iOS
