@@ -14,7 +14,8 @@ In a very easy way (through a JSON config file) you can configure:
 Basically, this project has been developed around the following Node modules:
 - ExpressJS: used to develop some useful middleware and to implement the REST behaviour (http://expressjs.com/)
 - SequelizeJS: is a promise-based ORM (http://docs.sequelizejs.com/en/latest/)
-- Socket.io: used to implement a realtime behaviour (http://socket.io)
+- Socket.io: used to implement a realtime behaviour (http://socket.io).
+<br/>
  This package includes also different test client solutions for the following environments:
  
 - iOS
