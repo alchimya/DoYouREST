@@ -57,8 +57,8 @@ where:
 
 2) <b>Database Configuration</b>
 <br/>
-Within the scripts folder of this package, you can find the DoYouRest.sql file, tha allow to create a test database.
-I f you will setup the doyourest database into your MySql environment, you will be able to use the test api included into the api-sequelize-test,js module.
+Within the scripts folder of this package, you can find the <b>DoYouRest.sql</b> file, that allows to create a test database.
+If you will setup the <b>doyourest</b> database into your MySql environment, you will be able to use the test api included into the api-sequelize-test,js module (<b>/sequelize/customers</b> and <b>/sequelize/customers/id</b>).
 
 <br/>Use this configuration to setup the MySql settings.
 <br/>You can find these information under the object database as follow:
@@ -84,7 +84,7 @@ where:
 - <b>isEnabled</b>: set this param to false if you don't want to use and to connect to the database.
 
 3) <b>Auth Configuration</b>
-<br/> Use this configuration to setup the kind of authentication that you want to use (basich-auth or JSON Web Token) and to enable/disable this behaviour.
+<br/> Use this configuration to specify the kind of authentication that you want to use (basich-auth or JSON Web Token) and to enable/disable this behaviour.
 <br/>You can find this information under the object authentication as follow:
 
 ```javascript
@@ -104,14 +104,16 @@ where:
 - <b>isEnabled</b>: enable/disable the authentication for all http request
 - <b>type</b>: 0 to enable the basic-authentication, 1 for the JSON Web Token.
 - <b>expirationToken</b>: use this param (minutes) to limit the lifetime of the token
-- <b>jwt.cryptography</b>: is the kind of cryptography that you want to use for the token: 0 for a symmetric cryptography with a key, 1 to use a cryptography based on a public/private key pair.
+- <b>jwt.cryptography</b>: represents the kind of cryptography that you want to use for the token: 0 for a symmetric cryptography with a key, 1 to use a cryptography based on a public/private key pair.
 - <b>jwt.symmetricKey</b>:key used encrypt/decrypt the token.
 - <b>asymmetricPivateKey</b>: a private key to sign the token with the RS256 algorithm
 - <b>asymmetricPublicKey</b>: a public key used to decrypt the token.
 
 For this purpose, the user list granted to access, are stored into the configuration file (./security/securityusers.json), but is intended that you can use a different approach.
-To do this you need to customize the AuthUser() class (./security/security-users.js)
-If you enable the JSON Web Token, before each request you have before to reqeust the token (http://yourserver:port/token) and then you have to send it (as json boby, request params or x-access-token) for each api request.
+<br/>
+To do this you need to customize the <b>AuthUser()<b/> class (./security/security-users.js).
+<br/>
+If you enable the JSON Web Token, before each request you have to obtain a token (http://yourserver:port/token) and then you have to send it (as a JSON boby, request params or x-access-token) for each API request.
 
 ![ScreenShot](https://raw.github.com/alchimya/DoYouREST/master/screenshots/token_flow.png)
 
@@ -134,7 +136,7 @@ As response you will recevive a JSON body as follow:
 For further details see the clients included with this package.
 
 4) <b>Socket.io Configuration</b>
-<br/> Use this configuration to setup the socket.io settings;
+<br/> Use this configuration to setup the socket.io settings.
 <br/>You can find these information under the object socketio as follow:
 
 ```javascript
@@ -143,21 +145,21 @@ For further details see the clients included with this package.
   }
 ```
 where:
-- <b>isEnabled</b>: enable/disable the socket.io behaviour;
-
+- <b>isEnabled</b>: enable/disable the socket.io behaviour.
+<br/>
 Why did I use Socket.io for RESTFul web services? 
 <br/>
-Well, I think that it should be useful to implement a real-time communication with other actors in a more complex architecture.
+Well, I think that it should be useful to implement a real-time communication with other "actors" in a more complex architecture.
 <br/>
 Imagine a similar scenario:
 
 ![ScreenShot](https://raw.github.com/alchimya/DoYouREST/master/screenshots/rest_socket.png)
 
-In this scenario a mobile application executes the login though a web api.
+In this scenario a mobile application executes for example a login though a web api.
 <br/>
-The server,though Socket.io, will dispatch a signal that a new client is connected, to all the clients (e.g. a web client monitor) connected to the server though an instance of socket.io. 
+The server,though Socket.io, will dispatch a signal that a new client is logged-in, to all the clients (e.g. a web client monitor) connected to the server though an instance of socket.io. 
 <br/>
-In this way you can monitor all the activities and actions of each client connected (e.g. mobile devices) to the server.
+In this way you can monitor all the activities and actions of each client (e.g. mobile devices) connected  to the server.
 <br/>
 Imagine that you have a mobile app with a “check-in” function like Facebook. 
 <br/>
@@ -183,7 +185,7 @@ where:
 <b>you_routing_path</b>: defines the route of the api (e.g. /api/customers)
 <b>your_api_module_definition</b>:is your custom js module that contains your REST definitions for the http verbs tha you want to implement.
 <br/>
-Within the folder controllers, you will find some test js files, that implement different REST API examples.
+Within the folder controllers, you will find some test js files, that implement some REST API examples.
 
 # Tests
 
@@ -247,7 +249,7 @@ describe('TOKEN GET',function(){
 # Clients
 All the clients included with this package, are just an example of how to consume a RESTful sevrice under different environments and with different programming languages.
 <br/>
-When in a client folder you will find a package.json file (e.g. Angular and jQuery), it means that you have to install it though npm.
+When in a client folder you will find a <b>package.json</b> file (e.g. Angular and jQuery), it means that you have to install it through npm.
 
 # Conclusion
 Enjoy!
