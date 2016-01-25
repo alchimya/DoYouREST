@@ -27,7 +27,7 @@ Basically, this project has been developed around the following Node modules:
 # How to install
 
 - cd DoYouREST/server
-- npm install
+- sudo npm install
 
 # Configuration
 All the configuration settings listed below are included within the file <b>/Config/appconfig.json</b>
