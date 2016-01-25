@@ -56,6 +56,7 @@ where:
 - <b>headers</b>:put here all the response headers that you want to use, for example to enable the cross-origin resource sharing.
 
 2) <b>Database Configuration</b>
+<br/>
 Within the scripts folder of this package, you can find the DoYouRest.sql file, tha allow to create a test database.
 I f you will setup the doyourest database into your MySql environment, you will be able to use the test api included into the api-sequelize-test,js module.
 
