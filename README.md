@@ -59,7 +59,6 @@ where:
 <br/>
 Within the scripts folder of this package, you can find the <b>DoYouRest.sql</b> file, that allows to create a test database.
 If you will setup the <b>doyourest</b> database into your MySql environment, you will be able to use the test api included into the api-sequelize-test,js module (<b>/sequelize/customers</b> and <b>/sequelize/customers/id</b>).
-
 <br/>Use this configuration to setup the MySql settings.
 <br/>You can find these information under the object database as follow:
 
@@ -111,7 +110,7 @@ where:
 
 For this purpose, the user list granted to access, are stored into the configuration file (./security/securityusers.json), but is intended that you can use a different approach.
 <br/>
-To do this you need to customize the <b>AuthUser()<b/> class (./security/security-users.js).
+To do this you need to customize the <b>AuthUser()</b> class (./security/security-users.js).
 <br/>
 If you enable the JSON Web Token, before each request you have to obtain a token (http://yourserver:port/token) and then you have to send it (as a JSON boby, request params or x-access-token) for each API request.
 
