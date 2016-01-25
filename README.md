@@ -242,7 +242,7 @@ describe('TOKEN GET',function(){
 ```
 
 # Clients
-All the clients included with this package, are just an example of how to consume a RESTful sevrice unde different environment and with different programming languages.
+All the clients included with this package, are just an example of how to consume a RESTful sevrice under different environment and with different programming languages.
 <br/>
 When in a client folder you will find a package.json file (e.g. Angular and jQuery), it means that you have to install it though npm.
 
