@@ -120,8 +120,8 @@ If you enable the JSON Web Token, before each request you have to obtain a token
 To request a token you have to send a POST with a JSON body with an user name and a password as folow:
 ```javascript
 {
-"uid":"my_uid_1",
-"pwd":"my_pwd_1"
+  "uid":"my_uid_1",
+  "pwd":"my_pwd_1"
 }
 ```
 As response you will recevive a JSON body as follow:
