@@ -193,9 +193,9 @@ Imagine a similar scenario:
 
 ![ScreenShot](https://raw.github.com/alchimya/DoYouREST/master/screenshots/rest_socket.png)
 
-In this scenario a mobile application executes for example a login though a web api.
+In this scenario a mobile application executes for example a login through a web api.
 <br/>
-The server,though Socket.io, will dispatch a signal that a new client is logged-in, to all the clients (e.g. a web client monitor) connected to the server though an instance of socket.io. 
+The server, through Socket.io, will dispatch a signal that a new client is logged-in, to all the clients (e.g. a web client monitor) connected to the server through an instance of socket.io. 
 <br/>
 In this way you can monitor all the activities and actions of each client (e.g. mobile devices) connected  to the server.
 <br/>
