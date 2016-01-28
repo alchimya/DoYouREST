@@ -331,7 +331,7 @@ When in a client folder you will find a <b>package.json</b> file (e.g. Angular a
 - <b>Angular</b>: the http request happens, asynchronously, through the <b>$http</b> service. The reuqested token will be stored in a $scope variable, see MainController.js controller.
 - <b>jQuery</b>: the http request happens, asynchronously, through the<b>jQuery.ajax()</b> method, see HttpRequest.js class. The reuqested token will be stored in to the body DOM element through the jQuery.data() method, see MainController.js.
 - <b>.NET (WPF Solution)</b>:  the http request happens, asynchronously, through the <b>HttpClient</b>, see  HttpAsyncRequest.cs class.
-- <b>PHP:...is coming...sorry!</b>
+- <b>PHP</b>:...is coming...sorry!
 
 # Conclusion
 Enjoy!
