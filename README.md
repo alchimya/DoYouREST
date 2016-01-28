@@ -201,7 +201,7 @@ In this way you can monitor all the activities and actions of each client (e.g. 
 <br/>
 Imagine that you have a mobile app with a “check-in” function like Facebook. 
 <br/>
-The mobile device sends a request though a web api, sending latitude and longitude of its current position.
+The mobile device sends a request through a web api, sending latitude and longitude of its current position.
 <br/>
 The server will recevive these data and will dispatch, for example, these information to a web client, connected to the server with socket.io, that can show these information on a map.
 
