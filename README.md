@@ -61,14 +61,14 @@ Basically, this project has been developed around the following Node modules:
 
 where:
 
-- config: contains the config file and its “driver” class
-- controllers:contains all the API modules
-- helpers: contains some helper classes
-- basicauth: middleware for the basic-auth
-- jwt: middleware for the JSON Web Token authentication
-- sequelize: contains the main class to manage the db connection
-- models: put here all your sequelize models
-- spec: contain all the jasmine tests
+- <b>config</b>: contains the config file and its “driver” class
+- <b>controllers</b>:contains all the API modules
+- <b>helpers</b>: contains some helper classes
+- <b>basicauth</b>: middleware for the basic-auth
+- <b>jwt</b>: middleware for the JSON Web Token authentication
+- <b>sequelize</b>: contains the main class to manage the db connection
+- <b>models</b>: put here all your sequelize models
+- <b>spec</b>: contain all the jasmine tests
 
 # Configuration
 All the configuration settings listed below are included within the file <b>/Config/appconfig.json</b>
