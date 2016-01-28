@@ -19,13 +19,13 @@ Basically, this project has been developed around the following Node modules:
 <br/>
  This package includes also different test client solutions for the following environments:
  
-
+- iOS
 - Android
 - AngularJS
 - jQuery
 - PHP (TODO)
 - .NET Client (as a WPF solution)
-- iOS
+
 
 # How to install
 
