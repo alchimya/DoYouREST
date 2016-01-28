@@ -326,11 +326,12 @@ All the clients included with this package, are just an example of how to consum
 <br/>
 When in a client folder you will find a <b>package.json</b> file (e.g. Angular and jQuery), it means that you have to install it through npm.
 
-- iOS: the http request happens, asynchronously, through <b>NSMutableURLRequest</b> and <b>NSURLSession</b>, see  L3SDKJWARequest.swift class (https://github.com/alchimya/iOS-JSON-API).
-- Android: the http request happens, asynchronously, through <b>AsyncHttpClient</b> (http://loopj.com/android-async-http/), see RequestHandler.java class.
-- Angular: the http request happens, asynchronously, through the <b>$http</b> service. The reuqested token will be stored in a $scope variable, see MainController.js controller.
-- jQuery: the http request happens, asynchronously, through the<b>jQuery.ajax()</b> method, see HttpRequest.js class. The reuqested token will be stored in to the body DOM element through the jQuery.data() method, see MainController.js.
-- .NET (WPF Solution):  the http request happens, asynchronously, through the <b>HttpClient</b>, see  HttpAsyncRequest.cs class.
+- <b>iOS</b>: the http request happens, asynchronously, through <b>NSMutableURLRequest</b> and <b>NSURLSession</b>, see  L3SDKJWARequest.swift class (https://github.com/alchimya/iOS-JSON-API).
+- <b>Android</b>: the http request happens, asynchronously, through <b>AsyncHttpClient</b> (http://loopj.com/android-async-http/), see RequestHandler.java class.
+- <b>Angular</b>: the http request happens, asynchronously, through the <b>$http</b> service. The reuqested token will be stored in a $scope variable, see MainController.js controller.
+- <b>jQuery</b>: the http request happens, asynchronously, through the<b>jQuery.ajax()</b> method, see HttpRequest.js class. The reuqested token will be stored in to the body DOM element through the jQuery.data() method, see MainController.js.
+- <b>.NET (WPF Solution)</b>:  the http request happens, asynchronously, through the <b>HttpClient</b>, see  HttpAsyncRequest.cs class.
+- <b>PHP:...is coming...sorry!</b>
 
 # Conclusion
 Enjoy!
