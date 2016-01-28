@@ -31,6 +31,44 @@ Basically, this project has been developed around the following Node modules:
 - cd DoYouREST/server
 - sudo npm install
 
+# Server Project Structure
+
+——> app
+<br/>
+    —————> config
+    <br/>
+    —————> controllers
+    <br/>
+    —————> helpers
+    <br/>
+    —————> security
+    <br/>
+	   ———————> basicauth
+	        <br/>
+	   ———————> jwt
+	        <br/>
+    —————> sequelize
+    <br/>
+    —————> models
+    <br/>
+    —————> spec
+    <br/>
+	   ———————> config
+	        <br/>
+	   ———————> security
+	        <br/>
+
+where:
+
+- config: contains the config file and its “driver” class
+- controllers:contains all the API modules
+- helpers: contains some helper classes
+- basicauth: middleware for the basic-auth
+- jwt: middleware for the JSON Web Token authentication
+- sequelize: contains the main class to manage the db connection
+- models: put here all your sequelize models
+- spec: contain all the jasmine tests
+
 # Configuration
 All the configuration settings listed below are included within the file <b>/Config/appconfig.json</b>
 
@@ -105,8 +143,8 @@ where:
 - <b>expirationToken</b>: use this param (minutes) to limit the lifetime of the token
 - <b>jwt.cryptography</b>: represents the kind of cryptography that you want to use for the token: 0 for a symmetric cryptography with a key, 1 to use a cryptography based on a public/private key pair.
 - <b>jwt.symmetricKey</b>:key used encrypt/decrypt the token.
-- <b>asymmetricPivateKey</b>: a private key to sign the token with the RS256 algorithm
-- <b>asymmetricPublicKey</b>: a public key used to decrypt the token.
+- <b>jwt.asymmetricPivateKey</b>: a private key to sign the token with the RS256 algorithm
+- <b>jwt.asymmetricPublicKey</b>: a public key used to decrypt the token.
 
 For this purpose, the user list granted to access, are stored into the configuration file (./security/securityusers.json), but is intended that you can use a different approach.
 <br/>
@@ -183,8 +221,46 @@ app.use('/you_routing_path', require('./your_api_module_definition'));
 where:
 <b>you_routing_path</b>: defines the route of the api (e.g. /api/customers)
 <b>your_api_module_definition</b>:is your custom js module that contains your REST definitions for the http verbs tha you want to implement.
+
+# API Examples
+Within the <b>controllers</b> folder tu can find, as example purpose, the following API modules:
+
+- <b>api-basic-test.js</b>: this module shows how to implement the basic operation for a GET and a POST with the router of ExpressJS framework.
 <br/>
-Within the folder controllers, you will find some test js files, that implement some REST API examples.
+The routing of this module (see /controllers/index.js) is mapped as /apiRoute/test
+<br/>
+There are three resources consumable as:
+<br/>
+GET <b>/apiRoute/test</b>
+<br/>
+GET <b>/apiRoute/test/id</b>
+<br/>
+POST <b>/apiRoute/test</b>
+
+- <b>api-sequelize-test.js</b>: this module shows how to implement an API by querying data to the doyourest database bY using sequelize.
+<br/>
+There are two kind of data query: by ORM Model and by SQL String. 
+<br/>
+The routing of this module (see /controllers/index.js) is mapped as /apiRoute/sequelize.
+<br/>
+There are three resources consumable as:
+<br/>
+POST <b>/apiRoute/sequelize/query/table</b>:will executed a <b>SELECT *</b> on the table passed with the request path
+<br/>
+POST <b>/apiRoute/sequelize/customers</b>:will load all the records of the customers table (see doyourest sample db)
+<br/>
+POST <b>/apiRoute/sequelize/customers/id</b>:will load the record of the customers table filtered by the id passed with the request path
+
+- <b>api-socketio-test.js</b>: this module shows how to emit a signal through socket.io after performing an operation.
+<br/>
+The routing of this module (see /controllers/index.js) is mapped as /apiRoute/geolocation.
+<br/>
+There are two resources consumable as:
+<br/>
+POST <b>/apiRoute/geolocation/checkin/</b>
+<br/>
+POST <b>/apiRoute/geolocation/checkout/</b>
+
 
 # Tests
 
