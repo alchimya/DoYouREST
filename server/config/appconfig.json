@@ -2,7 +2,7 @@
   "server":{
     "port":8080,
     "apiRoute":"/api",
-    "isCluster":false,
+    "isCluster":true,
     "headers":[
       {"name":"Access-Control-Allow-Origin","value":"*"},
       {"name":"Access-Control-Allow-Headers","value":"Origin, X-Requested-With, Content-Type, Accept"},
@@ -15,7 +15,7 @@
     "password":"your_mysql_password",
     "host":"localhost",
     "port":3306,
-    "connectionPool":100,
+    "connectionPool":1000,
     "isEnabled":false
   },
   "authentication":{

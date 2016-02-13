@@ -13,6 +13,8 @@ var express = require('express'),
 
 router.post('/', function (req, res,next) {
 
+    console.log(req.body);
+
     if (!req.body | !req.body.uid | !req.body.pwd){
         return res.status(401).send(errorResponse(401,"unauthorized","unauthorized"));
     }
