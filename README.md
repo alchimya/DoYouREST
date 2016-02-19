@@ -122,7 +122,7 @@ where:
 - <b>port</b>:listening port of your MySql
 - <b>connectionPool</b>:setup here the conneciton pool (if you are not familiar with conenciton pool see here https://en.wikipedia.org/wiki/Connection_pool)
 - <b>isEnabled</b>: set this param to false if you don't want to use and to connect to the database.
-- <b>type</b>: 0 to enable sequelize as database engine, 1 to use mysql module driver. If you want to extend the database capabilities, you can add a different database driver (e.g. mssql for SQL Server), add a new member enum (database-enums.js) and manage it with a custom class. As examples see the mysql-driver.js and sequelize-driver.js classes.
+
 - 
 3) <b>Auth Configuration</b>
 <br/> Use this configuration to specify the kind of authentication that you want to use (basich-auth or JSON Web Token) and to enable/disable this behaviour.
