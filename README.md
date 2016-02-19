@@ -14,6 +14,7 @@ In a very easy way (through a JSON config file) you can configure:
 Basically, this project has been developed around the following Node modules:
 - ExpressJS: used to develop some useful middleware and to implement the REST behaviour (http://expressjs.com/)
 - SequelizeJS: is a promise-based ORM (http://docs.sequelizejs.com/en/latest/)
+- MySql Driver: is a node.js driver for mysql written in JavaScript (https://github.com/felixge/node-mysql)
 - Socket.io: used to implement a realtime behaviour (http://socket.io).
 <br/>
 <br/>
@@ -81,7 +82,7 @@ All the configuration settings listed below are included within the file <b>/Con
 "server":{
     "port":8080,
     "apiRoute":"/api",
-    "isCluster":false,
+    "isCluster":true,
     "headers":[
       {"name":"Access-Control-Allow-Origin","value":"*"},
       {"name":"Access-Control-Allow-Headers","value":"Origin, X-Requested-With, Content-Type, Accept"},
@@ -109,7 +110,8 @@ If you will setup the <b>doyourest</b> database into your MySql environment, you
     "host":"localhost",
     "port":3306,
     "connectionPool":100,
-    "isEnabled":true
+    "isEnabled":true,
+    "type":0
   }
 ```
 where:
@@ -120,7 +122,8 @@ where:
 - <b>port</b>:listening port of your MySql
 - <b>connectionPool</b>:setup here the conneciton pool (if you are not familiar with conenciton pool see here https://en.wikipedia.org/wiki/Connection_pool)
 - <b>isEnabled</b>: set this param to false if you don't want to use and to connect to the database.
-
+- <b>type</b>: 0 to enable sequelize as database engine, 1 to use mysql module driver. <u>If you want to extend the database capabilities, you can add a different database driver (e.g. mssql for SQL Server), add a new member enum (database-enums.js) and manage it with a custom class. As examples see the mysql-driver.js and sequelize-driver.js classes</u>
+- 
 3) <b>Auth Configuration</b>
 <br/> Use this configuration to specify the kind of authentication that you want to use (basich-auth or JSON Web Token) and to enable/disable this behaviour.
 <br/>You can find this information under the object authentication as follow:
@@ -238,7 +241,7 @@ GET <b>/apiRoute/test/id</b>
 <br/>
 POST <b>/apiRoute/test</b>
 
-- <b>api-sequelize-test.js</b>: this module shows how to implement an API by querying data to the doyourest database bY using sequelize.
+- <b>api-sequelize-test.js</b>: this module shows how to implement an API by querying data to the doyourest database by using sequelize.
 <br/>
 There are two kind of data query: by ORM Model and by SQL String. 
 <br/>
@@ -251,6 +254,15 @@ POST <b>/apiRoute/sequelize/query/table</b>:will executed a <b>SELECT *</b> on t
 POST <b>/apiRoute/sequelize/customers</b>:will load all the records of the customers table (see doyourest sample db)
 <br/>
 POST <b>/apiRoute/sequelize/customers/id</b>:will load the record of the customers table filtered by the id passed with the request path
+
+- <b>api-mysql-test.js</b>: this module shows how to implement an API by querying data to the doyourest database by using the mysql driver and sequelize. Try to switch the type parameter on the database config params to test the two database drivers.
+<br/>
+The routing of this module (see /controllers/index.js) is mapped as /apiRoute/mysql.
+<br/>
+There is one resource consumable as:
+<br/>
+POST <b>/apiRoute/mysql/query/table</b>:will executed a <b>SELECT *</b> on the table passed with the request path.
+<br/>
 
 - <b>api-socketio-test.js</b>: this module shows how to emit a signal through socket.io after performing an operation.
 <br/>
