@@ -7,7 +7,7 @@ var express = require('express'),
     securityUser= require ('./../security-users'),
     errorResponse = require('./../../helpers/error-response'),
     config= require ('../.././config/app-config')(),
-    authentication=require('../.././security/authentication-const')(),
+    authentication=require('../authentication-enums')(),
     fs=require('fs'),
     jwt=require('jsonwebtoken');
 

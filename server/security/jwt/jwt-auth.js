@@ -6,7 +6,7 @@
 var jwt=require('jsonwebtoken'),
     config= require ('../.././config/app-config')(),
     fs=require('fs'),
-    authentication=require('../.././security/authentication-const')();
+    authentication=require('../authentication-enums')();
 
 function JWKResponse(){
     return{

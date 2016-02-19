@@ -14,5 +14,7 @@ module.exports = function (app) {
     app.use( config.server.apiRoute + '/geolocation', require('./api-socket-io-test'));
     app.use( config.server.apiRoute + '/geolocation', require('./api-socket-io-test'));
     app.use( config.server.apiRoute + '/sequelize', require('./api-sequelize-test'));
+    app.use( config.server.apiRoute + '/mysql', require('./api-mysql-test'));
+
 };
 

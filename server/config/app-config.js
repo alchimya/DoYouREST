@@ -8,7 +8,7 @@ var fs = require('fs');
 
 function Config(){
     //read the config json file and fille the object
-    var jsonconfig = JSON.parse(fs.readFileSync('./config/appconfig.json'), 'utf8');
+    var jsonconfig = JSON.parse(fs.readFileSync(__dirname  + '/appconfig.json'), 'utf8');
 
     return{
         server:{
@@ -24,7 +24,8 @@ function Config(){
             host:jsonconfig.database.host,
             port:jsonconfig.database.port,
             connectionPool:jsonconfig.database.connectionPool,
-            isEnabled:jsonconfig.database.isEnabled
+            isEnabled:jsonconfig.database.isEnabled,
+            type:jsonconfig.database.type
         },
         authentication:{
             isEnabled:jsonconfig.authentication.isEnabled,

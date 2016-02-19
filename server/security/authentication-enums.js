@@ -2,7 +2,7 @@
  * Created by domenicovacchiano on 08/01/16.
  */
 
-function Authentication(){
+function AuthenticationEnums(){
     return{
         type:{
             BASIC_AUTH:0,
@@ -20,4 +20,4 @@ function Authentication(){
 }
 
 
-module.exports=Authentication;
+module.exports=AuthenticationEnums;

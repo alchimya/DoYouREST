@@ -5,7 +5,7 @@ var config= require ('./config/app-config')(),
     express=require('express'),
     bodyParser = require('body-parser'),
     socketio= require('./helpers/socket-io'),
-    authentication=require('./security/authentication-const')(),
+    authentication=require('./security/authentication-enums')(),
     errorResponse = require('./helpers/error-response'),
     morgan= require('morgan'),
     cluster = require('cluster'),
@@ -70,6 +70,7 @@ var config= require ('./config/app-config')(),
         var server=app.listen(config.server.port,function(){
             console.log("Server started on port " + config.server.port);
         });
+
 
         //Http Error Handling on \
         app.use(function(err, req, res, next) {

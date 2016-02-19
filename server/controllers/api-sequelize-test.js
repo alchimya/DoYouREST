@@ -6,7 +6,7 @@
 
 var express = require('express'),
     errorResponse = require('./../helpers/error-response'),
-    db= require('./../sequelize/sequelize')(),
+    db= require('./../database/sequelize-driver')(),
     Sequelize= require('sequelize'),
     Customer=require('../models/customer');
     router = express.Router();
@@ -21,9 +21,9 @@ router.post('/query/:table', function (req, res,next) {
     }
 
     db.connection.query("SELECT * FROM  "  + req.params.table, { type: Sequelize.QueryTypes.SELECT})
-        .then(function(albums) {
-            console.log(albums);
-            res.send(albums);
+        .then(function(table) {
+            console.log(table);
+            res.send(table);
         })
         .catch(function(err) {
             console.log(err);

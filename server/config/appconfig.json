@@ -11,12 +11,13 @@
   },
   "database":{
     "name":"doyourest",
-    "user":"your_mysql_user",
-    "password":"your_mysql_password",
-    "host":"localhost",
+    "user":"root",
+    "password":"my_user_db",
+    "host":"my_password_db",
     "port":3306,
     "connectionPool":1000,
-    "isEnabled":false
+    "isEnabled":true,
+    "type":0
   },
   "authentication":{
     "isEnabled":true,

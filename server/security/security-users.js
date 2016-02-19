@@ -14,7 +14,7 @@ function AuthUser(){
 AuthUser.prototype.load=function(uid,pwd){
 
     //load all the users stored within the json file
-    var basicauthusers = JSON.parse(fs.readFileSync('./security/securityusers.json'), 'utf8');
+    var basicauthusers = JSON.parse(fs.readFileSync(__dirname  + '/securityusers.json'), 'utf8');
     //try to find the request use
     var user =basicauthusers.users.filter(function(item) {
         return item.uid === uid && item.pwd === pwd
