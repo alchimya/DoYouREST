@@ -19,7 +19,7 @@ Basically, this project has been developed around the following Node modules:
 <br/>
 <br/>
  This package also includes different test client solutions for the following environments:
- 
+
 - iOS
 - Android
 - AngularJS
