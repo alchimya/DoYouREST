@@ -274,7 +274,6 @@ POST <b>/apiRoute/geolocation/checkin/</b>
 <br/>
 POST <b>/apiRoute/geolocation/checkout/</b>
 
-
 # Tests
 
 I developed some useful tests by using jasmine-node (https://github.com/mhevery/jasmine-node).
